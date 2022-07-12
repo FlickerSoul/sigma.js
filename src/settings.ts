@@ -49,8 +49,10 @@ export interface Settings {
   // Component rendering
   defaultNodeColor: string;
   defaultNodeType: string;
+  defaultNodeSize: number;
   defaultEdgeColor: string;
   defaultEdgeType: string;
+  defaultEdgeSize: number;
   labelFont: string;
   labelSize: number;
   labelWeight: string;
@@ -100,8 +102,10 @@ export const DEFAULT_SETTINGS: Settings = {
   // Component rendering
   defaultNodeColor: "#999",
   defaultNodeType: "circle",
+  defaultNodeSize: 2,
   defaultEdgeColor: "#ccc",
   defaultEdgeType: "line",
+  defaultEdgeSize: 0.5,
   labelFont: "Arial",
   labelSize: 14,
   labelWeight: "normal",
