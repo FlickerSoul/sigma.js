@@ -60,7 +60,7 @@ function applyNodeDefaults(settings: Settings, key: string, data: Partial<NodeDi
   if (data.label !== undefined && data.label !== null) data.label = "" + data.label;
   else data.label = null;
 
-  if (!data.size) data.size = 2;
+  if (!data.size) data.size = settings.defaultNodeSize;
 
   if (!data.hasOwnProperty("hidden")) data.hidden = false;
 
@@ -80,7 +80,7 @@ function applyEdgeDefaults(settings: Settings, key: string, data: Partial<EdgeDi
 
   if (!data.label) data.label = "";
 
-  if (!data.size) data.size = 0.5;
+  if (!data.size) data.size = settings.defaultEdgeSize;
 
   if (!data.hasOwnProperty("hidden")) data.hidden = false;
 
